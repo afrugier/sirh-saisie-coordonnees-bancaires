@@ -54,7 +54,7 @@ function selectRowOnTable() {
         var matricule = $(this).find(".matricule").text();
         $("tr").css({"background-color":"white"});
         $("tr").css({"color":"black"})
-        $(this).css({"background-color":"blue"});
+        $(this).css({"background-color":"green"});
         $(this).css({"color":"white"});
         $.get("http://localhost:8080/sgp/api/collaborateurs/" + matricule + "/banque").done(function (collabBankData) {
             updateBanqueInformation(collabBankData, matricule);
